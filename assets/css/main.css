@@ -1,0 +1,21 @@
+body {
+  margin: 0px;
+  background: url("../images/playa.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav {
+  padding-top: 7vh;
+  color: white;
+  background-color: black;
+}
+
+nav > a {
+  float: right;
+  color: white;
+  margin: 10px;
+}
