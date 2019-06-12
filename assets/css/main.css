@@ -33,6 +33,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 700px;
 }
 
 .buscador {
@@ -50,4 +51,17 @@ p {
   height: 28px;
   width: 30px;
   background-color: black;
+}
+
+.footer{
+  height: 80px;
+  background-color: black;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  padding: 25px;
+}
+
+.footer p {
+  color: white;
 }
