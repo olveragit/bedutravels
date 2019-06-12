@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-family: Helvetica, sans-serif;
 }
 
 nav {
@@ -18,4 +19,35 @@ nav > a {
   float: right;
   color: white;
   margin: 10px;
+}
+
+p {
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.contenedor {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buscador {
+  background-color: white;
+  width: 280px;
+  display: flex;
+}
+
+.buscarDestino {
+  height: 28px;
+  width: 250px;
+}
+
+.lupa {
+  height: 28px;
+  width: 30px;
+  background-color: black;
 }
