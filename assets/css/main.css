@@ -1,67 +1,146 @@
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   background: url("../images/playa.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 1600px 580px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  font-family: Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
+
+
+
+/* HEADER */
 
 nav {
-  padding-top: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
   color: white;
   background-color: black;
+  padding-left: 10px;
 }
 
-nav > a {
-  float: right;
+.top-menu > a {
   color: white;
-  margin: 10px;
-}
-
-p {
-  color: black;
-  font-weight: bold;
-  font-size: 26px;
+  margin: 15px;
+  text-decoration: none;
 }
 
 .contenedor {
-  color: white;
+  margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  height: 700px;
+  align-items: center;
+  justify-content: center;
+  height: 500px; // 580px - 80px del header
 }
 
-.buscador {
-  background-color: white;
-  width: 280px;
-  display: flex;
+.contenedor h2 {
+  margin: 0;
+  color: white;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.contenedor h3 {
+  color: white;
+  font-weight: 300;
 }
 
 .buscarDestino {
-  height: 28px;
-  width: 250px;
+  height: 47px;
+  width: 450px;
+  padding: 0 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-image: url("../images/lupa.svg");
+  background-repeat: no-repeat;
+  background-size: 45px 45px;
+  background-position: right center;
 }
 
-.lupa {
-  height: 28px;
-  width: 30px;
-  background-color: black;
+
+
+/* DESTINOS */
+
+.destinos-preferidos{
+  margin: 55px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.destinos-preferidos h2 {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.destinos-preferidos h3 {
+  margin: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.countries {
+  margin-top: 20px;
+  color: black;
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  grid-template-rows: 235px 235px 235px;
+  grid-gap: 15px 15px;
+  /* border: 1px solid gray; */
+}
+
+.countries div {
+  /* border: 1px solid red; */
+}
+
+.country-detail img {
+  height: 195px;
+  width: 368px;
+}
+
+.country-detail p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+/* FOOTER */
 
 .footer{
-  height: 80px;
-  background-color: black;
+  margin-top: 5px;
+  height: 140px;
+  background-color: #2E2E2E;
   display: flex;
-  /* justify-content: flex-start; */
+  justify-content: flex-start;
   align-items: center;
-  padding: 25px;
+  padding: 25px 0;
 }
 
 .footer p {
   color: white;
+  font-size: 20px;
+}
+
+.social-icons {
+  width: 24%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.footer img {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  margin-left: 20px;
 }
