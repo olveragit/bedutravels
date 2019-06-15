@@ -286,10 +286,10 @@ nav {
 
 .register-form {
   margin: 20px;
-  padding: 30px;
+  padding: 25px;
   width: 1000px;
   border-radius: 15px;
-  /* background-color: #FFF; */
+  background-color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -308,7 +308,7 @@ nav {
 }
 
 .register-form-fields input {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding: 0;
   width: 100%;
   height: 18px;
@@ -320,11 +320,15 @@ nav {
   font-weight: 300;
 }
 
+.register-form-fields > a {
+  font-weight: 300;
+}
+
 input.button-send-register {
   margin: 0;
   padding: 3px;
   align-self: center;
-  width: 140px;
+  width: 340px;
   height: 25px;
   background-color: #00C46B;
   color: white;
@@ -362,7 +366,6 @@ button.button-change-profile-photo {
   padding: 30px;
   width: 1000px;
   border-radius: 15px;
-  /* background-color: #FFF; */
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -375,4 +378,63 @@ button.button-change-profile-photo {
 
 .foto-perfil img {
   width: 100%;
+}
+
+/* LOGIN */
+
+.password-form-fields {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 170px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.password-form-fields input {
+  margin-bottom: 12px;
+  padding: 0;
+  width: 100%;
+  height: 24px;
+}
+
+.password-form-fields h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.password-form-fields > a {
+  font-weight: 300;
+}
+
+.register-form h3 {
+  margin: 45px;
+}
+
+input.button-save-information {
+  margin: 0;
+  padding: 3px;
+  align-self: center;
+  width: 140px;
+  height: 25px;
+  background-color: #00C46B;
+  color: white;
+  font-size: 12px;
+  border: none;
+}
+
+.password-form {
+  margin: 110px;
+  padding: 25px;
+  width: 800px;
+  border-radius: 15px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
