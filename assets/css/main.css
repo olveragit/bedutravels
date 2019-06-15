@@ -9,6 +9,16 @@ body {
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 
+.body-destinos {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/playa.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px 330px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
 
 
 /* HEADER */
@@ -143,4 +153,180 @@ nav {
   width: 35px;
   border-radius: 5px;
   margin-left: 20px;
+}
+
+/* DESCRIPCION DESTINOS */
+
+.country-description {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 250px; // 330px - 80px del header
+}
+
+.country-description h2 {
+  margin: 0 200px;
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.country-description p {
+  margin: 0 200px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.city-filter {
+  border: 1px solid gray;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+.checkbox-options p {
+  margin: 0;
+  padding: 0;
+}
+
+/* TOUR LIST */
+
+.tour-list {
+  width: 98.5%;
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+.tour-description {
+  width: inherit;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+}
+
+.tour-description img {
+  height: 280px;
+  width: 320px;
+}
+
+.tour-details {
+  width: inherit;
+  padding: 20px 40px 20px 80px;
+  height: 240px;
+  background-color: white;
+}
+
+.tour-details h4,
+.tour-details h6 {
+  margin: 0;
+}
+
+.tour-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-details-items p,
+.tour-details-values p {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.view-tour-button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid green;
+  border-radius: 7px;
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* REGISTER PAGE */
+
+.logo-bedu {
+  height: 60px;
+  justify-content: center;
+}
+
+.body-register {
+  background: none;
+  background-color: #E0E0E0;
+}
+
+.footer-register {
+  display: none;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form {
+  margin: 20px;
+  padding: 30px;
+  width: 1000px;
+  border-radius: 15px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form-fields {
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.register-form-fields input {
+  margin-bottom: 20px;
+  padding: 0;
+  width: 100%;
+  height: 18px;
+}
+
+.register-form-fields h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+input.button-send-register {
+  margin: 0;
+  padding: 3px;
+  align-self: center;
+  width: 340px;
+  background-color: #00C46B;
+  color: white;
+  font-size: 12px;
+  border: none;
 }
