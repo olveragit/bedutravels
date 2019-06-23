@@ -98,15 +98,63 @@ nav {
   font-weight: 500;
 }
 
-.countries {
+
+
+.countries{
   margin-top: 20px;
   color: black;
   display: grid;
-  grid-template-columns: 370px 370px 370px;
-  grid-template-rows: 235px 235px 235px;
+  /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
+  grid-template-columns: 370px;
+  grid-template-rows: 235px 235px 235px 235px 235px 235px 235px 235px 235px;
+  grid-template-areas: "mex1"
+                                "col"
+                                "fra"
+                                "pan"
+                                "arg"
+                                "lan"
+                                "bra"
+                                "mex2"
+                                "mex3";
   grid-gap: 15px 15px;
-  /* border: 1px solid gray; */
 }
+
+@media (min-width: 800px){
+  .countries{
+    grid-template-columns: 370px 370px;
+    grid-template-rows: 235px 235px 235px 235px 235px;
+    grid-template-areas: "mex1 col"
+                                  "fra pan"
+                                  "arg lan"
+                                  "bra mex2"
+                                  "mex3 .";
+    grid-gap: 15px 15px;
+  }
+}
+
+@media (min-width: 1160px){
+  .countries {
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: 235px 235px 235px;
+    grid-template-areas: "mex1 col fra"
+                                    "pan arg lan"
+                                    "bra mex2 mex3 ";
+    grid-gap: 15px 15px;
+    /* border: 1px solid gray; */
+  }
+}
+
+.mex1 { grid-area: mex1; }
+.col { grid-area: col;}
+.fra { grid-area: fra;}
+.pan { grid-area: pan;}
+.arg { grid-area: arg;}
+.lan { grid-area: lan;}
+.bra { grid-area: bra;}
+.mex2 { grid-area: mex2;}
+.mex3 { grid-area: mex3;}
+
+
 
 .countries div {
   /* border: 1px solid red; */
